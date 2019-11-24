@@ -22,5 +22,6 @@ int hsh_num_builtins();
 int hsh_cd(char **args);
 int hsh_help(char **args);
 int hsh_exit(char **args);
-
+int hsh_env(char **args);
+int hsh_ls(char **args);
 #endif /* HOLBERTON_H */
