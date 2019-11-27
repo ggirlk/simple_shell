@@ -1,5 +1,4 @@
 # Simple Shell
-
 Simple shell is a project of end semester, it helps to explore and manipulate and create basic shell program.
 
 ## Installation
