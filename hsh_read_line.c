@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include "string.h"
 #include "holberton.h"
 
 #define HSH_RL_BUFSIZE 1024

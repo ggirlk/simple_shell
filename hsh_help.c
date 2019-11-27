@@ -11,7 +11,7 @@
  * @p: the name of the executable program
  * Return: Always returns 1, to continue executing.
  */
-int hsh_help(char **a__attribute__((unused)), char *p__attribute__((unused)))
+int hsh_help(char **a __attribute__((unused)), char *p __attribute__((unused)))
 {
 int i;
 char *msg[] = {
