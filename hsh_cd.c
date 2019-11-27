@@ -8,6 +8,7 @@
 /**
  * hsh_cd - builtin command: change directory.
  * @args: List of args.  args[0] is "cd".  args[1] is the directory.
+ * @progname: the name of the executable program
  * Return: Always returns 1, to continue executing.
  */
 int hsh_cd(char **args, char *progname)

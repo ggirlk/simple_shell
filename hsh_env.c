@@ -6,12 +6,13 @@
 #include "holberton.h"
 
 /**
- * env - prints the environment.
- * @args: List of args.  Not examined
+ * hsh_env - prints the environment.
+ * @a: List of args.  Not examined
+ * @p: the name of the executable program
  * Return: 1 on success, -1 on fail
  */
-extern char **environ;
-int hsh_env(char **args __attribute__((unused)), char *progname __attribute__((unused)))
+
+int hsh_env(char **a __attribute__((unused)), char *p __attribute__((unused)))
 {
 int i, n;
 for (i = 0; environ[i] != NULL; i++)

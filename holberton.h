@@ -12,7 +12,7 @@ typedef struct builtins
 char *builtin_str;
 int (*builtin_func)(char **, char *);
 } builtins;
-
+extern char **environ;
 int hsh_execute(char **args, char *);
 int hsh_launch(char **args, char *);
 char *hsh_read_line(void);

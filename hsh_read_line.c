@@ -6,7 +6,7 @@
 #include "holberton.h"
 
 /**
- * hsh_read_line: Read a line of input from stdin.
+ * hsh_read_line - Read a line of input from stdin.
  * Return: line from stdin.
  */
 char *hsh_read_line(void)

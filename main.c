@@ -7,7 +7,8 @@
 
 /**
  * main - main program: entry point.
- *
+ * @ac: size of av
+ * @av: a NULL determinated list of arguments
  * Return: status code
  */
 int main(int ac __attribute__((unused)), char **av)

@@ -8,6 +8,7 @@
 /**
  * hsh_ls - shows the contents of a directory.
  * @args: List of args.
+ * @progname: the name of the executable program
  * Return: 1
  */
 int hsh_ls(char **args, char *progname)

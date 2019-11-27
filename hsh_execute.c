@@ -7,7 +7,9 @@
 /**
  * hsh_execute - Execute shell built-in or launch program.
  * @args: Null terminated list of arguments.
- * Return: 1 if the shell should continue running, 0 if it should terminate
+ * @progname: the name of the executable program
+ * Return: 1 if the shell should continue running,
+ * ------- 0 if it should terminate
  */
 int hsh_execute(char **args, char *progname)
 {
