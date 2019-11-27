@@ -14,7 +14,7 @@
 char **hsh_split_line(char *line)
 {
 int hsh_tok_bufsize = 64;
-char hsh_tok_delim = " \t\r\n\a";
+char *hsh_tok_delim = " \t\r\n\a";
 int bufsize = hsh_tok_bufsize, position = 0;
 char **tokens = malloc(bufsize * sizeof(char *));
 char *token;
@@ -25,7 +25,7 @@ write(STDERR_FILENO, "hsh: allocation error\n", 22);
 free(tokens);
 exit(EXIT_FAILURE);
 }
-token = strtok(line, hsh_tok_delim);
+token = strtok(line, &hsh_tok_delim);
 while (token != NULL)
 {
 tokens[position] = token;
