@@ -1,4 +1,4 @@
-.\" Manpage for simple_shell
+.\" Manpage for simple_shell of Holberton school
 .TH HSH 8"19 November 2019" "1.0" "simple_shell man page"
 .SH NAME
 .B simple_shell \- Shell for Holberton school 
