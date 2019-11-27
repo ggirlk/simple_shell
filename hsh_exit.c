@@ -15,7 +15,7 @@ if (a[1])
 status = _atoi(a[1]);
 exit(status);
 }
-else
+
 exit(0);
-return (1);
+return (0);
 }
