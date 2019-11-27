@@ -14,11 +14,11 @@ char *hsh_read_line(void)
 char *line = NULL;
 size_t bufsize = 0;
 int n = 0;
-char *eof = "^D\n";
+char *eof = "\n";
 n = getline(&line, &bufsize, stdin);
 if (n == -1)
 {
-write(STDOUT_FILENO, eof, _strlen(eof));
+write(1, eof, _strlen(eof));
 exit(0);
 }
 return (line);
