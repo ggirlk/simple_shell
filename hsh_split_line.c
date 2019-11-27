@@ -6,8 +6,6 @@
 #include <string.h>
 #include "holberton.h"
 
-#define HSH_TOK_BUFSIZE 64
-#define HSH_TOK_DELIM " \t\r\n\a"
 /**
   * hsh_split_line - Split a line into tokens.
   * @line: The line.
@@ -15,16 +13,19 @@
  */
 char **hsh_split_line(char *line)
 {
-int bufsize = HSH_TOK_BUFSIZE, position = 0;
+int hsh_tok_bufsize = 64;
+char hsh_tok_delim = " \t\r\n\a";
+int bufsize = hsh_tok_bufsize, position = 0;
 char **tokens = malloc(bufsize * sizeof(char *));
 char *token;
+
 if (!tokens)
 {
 write(STDERR_FILENO, "hsh: allocation error\n", 22);
 free(tokens);
 exit(EXIT_FAILURE);
 }
-token = strtok(line, HSH_TOK_DELIM);
+token = strtok(line, hsh_tok_delim);
 while (token != NULL)
 {
 tokens[position] = token;
@@ -32,7 +33,7 @@ position++;
 
 if (position >= bufsize)
 {
-bufsize += HSH_TOK_BUFSIZE;
+bufsize += hsh_tok_bufsize;
 tokens = malloc(sizeof(tokens) + bufsize *sizeof(char *));
 if (!tokens)
 {
@@ -40,7 +41,7 @@ write(STDERR_FILENO, "hsh: allocation error\n", 22);
 exit(EXIT_FAILURE);
 }
 }
-token = strtok(NULL, HSH_TOK_DELIM);
+token = strtok(NULL, hsh_tok_bufsize);
 }
 tokens[position] = NULL;
 return (tokens);

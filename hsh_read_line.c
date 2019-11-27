@@ -5,7 +5,6 @@
 #include "string.h"
 #include "holberton.h"
 
-#define HSH_RL_BUFSIZE 1024
 /**
  * hsh_read_line: Read a line of input from stdin.
  * Return: line from stdin.
