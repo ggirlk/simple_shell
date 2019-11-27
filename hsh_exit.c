@@ -7,5 +7,5 @@
  */
 int hsh_exit(char **a __attribute__((unused)), char *p __attribute__((unused)))
 {
-exit(0);
+exit(110);
 }
