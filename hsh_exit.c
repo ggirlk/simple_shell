@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * hsh_exit - builtin command: exit.
  * @a: list of args.  Not examined.
@@ -6,5 +7,5 @@
  */
 int hsh_exit(char **a __attribute__((unused)), char *p __attribute__((unused)))
 {
-return (0);
+exit(0);
 }
