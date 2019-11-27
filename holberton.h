@@ -2,10 +2,10 @@
 #define HOLBERTON_H
 
 /**
- * struct builtins - structure of builtins and their related functions
+ * struct builtins - structure of builtins and their related functions.
  *
- * @builtin_str: The builtin command
- * @builtin_func: The function associated
+ * @builtin_str: The builtin command.
+ * @builtin_func: The function associated.
  */
 typedef struct builtins
 {
