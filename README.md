@@ -4,7 +4,7 @@ Simple shell is a project of end semester, it helps to explore and manipulate an
 
 ## Installation
 
-You can install simple shell by cloning the repository:
+You can install simple shell by cloning this repository:
 ```
 https://github.com/ggirlk/simple_shell
 ```
