@@ -16,6 +16,5 @@ status = _atoi(a[1]);
 exit(status);
 }
 
-exit(0);
 return (0);
 }
