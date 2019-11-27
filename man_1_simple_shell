@@ -1,1 +1,35 @@
 .\" Manpage for simple_shell
+.TH HSH 8"19 November 2019" "1.0" "simple_shell man page"
+.SH NAME
+.B simple_shell \- Shell for Holberton school 
+.SH SYNOPSIS
+.B simple_shell ./hsh
+.SH DESCRIPTION
+Simple_hell is an environment in which we can run our commands, programs, and shell scripts.
+.br
+It gathers input from you and executes programs based on that input. When a program finishes executing, it displays that program's output.
+.SH OVERVIEW
+Simple_shell is a group project of end semester in Holberton school done by (Mohamed Yassine Aboub,Khouloud Alkhamassi).
+.br
+shell is a program that provides the traditional, text-only user interface for Linux and other Unix-like operating systems.
+.SH BUILTINS
+.BI Cd
+.br
+The cd (“change directory”) command is used to change the current working directory in Linux and other Unix-like operating systems.
+.BI Env
+.br
+env - run a program in a modified environment.
+.BI Ls
+.br
+The ls command is a command-line utility for listing the contents of a directory or files.
+.BI Exit
+.br
+exit command is used to exit the shell where it is currently running.
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Mohamed Yassine Aboub 
+(yassineaboub@live.fr)
+Khouloud Alkhammassi 
+(khouloud.alkhammassi@gmail.com)
+
