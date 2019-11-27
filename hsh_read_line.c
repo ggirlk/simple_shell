@@ -19,8 +19,8 @@ char *eof = "^D\n";
 n = getline(&line, &bufsize, stdin);
 if (n == -1)
 {
-write(STDOUT_FILENO, eof, strlen(eof));
+write(STDOUT_FILENO, eof, _strlen(eof));
 exit(0);
 }
-return line;
+return (line);
 }

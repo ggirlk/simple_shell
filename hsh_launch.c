@@ -7,6 +7,7 @@
 /**
  * hsh_launch - launch a program and wait for it to terminate.
  * @args: Null terminated list of arguments.
+ * @progname: the name of the executable program
  * Return: Always returns 1, to continue execution.
  */
 int hsh_launch(char **args, char *progname)
@@ -29,13 +30,12 @@ else if (pid < 0)
 /* Error forking */
 perror("hsh");
 }
-else {
-/* Parent process */
-do
+else
 {
+/* Parent process */
+do {
 waitpid(pid, &status, WUNTRACED);
-}
-while (!WIFEXITED(status) && !WIFSIGNALED(status));
+} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 }
 
 return (1);
