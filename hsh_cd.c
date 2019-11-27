@@ -10,7 +10,7 @@
  * @args: List of args.  args[0] is "cd".  args[1] is the directory.
  * Return: Always returns 1, to continue executing.
  */
-int hsh_cd(char **args)
+int hsh_cd(char **args, char *progname)
 {
 if (args[1] == NULL)
 {
@@ -20,7 +20,7 @@ else
 {
 if (chdir(args[1]) != 0)
 {
-perror("lsh");
+perror(progname);
 }
 }
 return (1);

@@ -9,7 +9,7 @@
  * @args: Null terminated list of arguments.
  * Return: Always returns 1, to continue execution.
  */
-int hsh_launch(char **args)
+int hsh_launch(char **args, char *progname)
 {
 pid_t pid;
 int status;
@@ -20,7 +20,7 @@ if (pid == 0)
 /* Child process */
 if (execve(args[0], args, NULL) == -1)
 {
-perror("hsh");
+perror(progname);
 }
 exit(EXIT_FAILURE);
 }

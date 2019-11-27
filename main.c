@@ -10,10 +10,10 @@
  *
  * Return: status code
  */
-int main()
+int main(int ac __attribute__((unused)), char **av)
 {
 /* Run command loop. */
-hsh_loop();
+hsh_loop(av[0]);
 
 return (EXIT_SUCCESS);
 }

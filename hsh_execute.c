@@ -2,14 +2,14 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include "string.h"
 #include "holberton.h"
 /**
  * hsh_execute - Execute shell built-in or launch program.
  * @args: Null terminated list of arguments.
  * Return: 1 if the shell should continue running, 0 if it should terminate
  */
-int hsh_execute(char **args)
+int hsh_execute(char **args, char *progname)
 {
 int i;
 builtins bins[] = {
@@ -29,11 +29,11 @@ return (1);
 
 for (i = 0; i < hsh_num_builtins(); i++)
 {
-if (strcmp(args[0], bins[i].builtin_str) == 0)
+if (_strcmp(args[0], bins[i].builtin_str) == 0)
 {
-return ((*bins[i].builtin_func)(args));
+return ((*bins[i].builtin_func)(args, progname));
 }
 }
 
-return (hsh_launch(args));
+return (hsh_launch(args, progname));
 }

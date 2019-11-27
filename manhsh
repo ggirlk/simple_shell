@@ -1,0 +1,16 @@
+\" Manpage for simple_shell
+.TH HSH 8"19 November 2019" "1.0" "simple_shell man page"
+.SH NAME
+.B simple_shell \- Shell for Holberton school 
+.SH SYNOPSIS
+.B simple_shell ./hsh
+.SH DESCRIPTION
+Simple_shell is a project of end semester in Holberton school that built by students.
+shell is a program that provides the traditional, text-only user interface for Linux and other Unix-like operating systems.
+.SH OPTIONS
+The nuseradd does not take any options. However, you can supply username.
+.SH SEE ALSO
+useradd(8), passwd(5), nuseradd.debian(8) 
+.SH BUGS
+No known bugs.
+.SH AUTHOR

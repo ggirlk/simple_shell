@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include "string.h"
 #include "holberton.h"
 
 /**
@@ -10,7 +10,7 @@
  * @args: List of args.
  * Return: 1
  */
-int hsh_ls(char **args)
+int hsh_ls(char **args, char *progname)
 {
 int  i;
 char **newargs = malloc(sizeof(args));
@@ -21,7 +21,7 @@ for (i = 0; args[i] != NULL; i++)
 {
 newargs[i + 1] = args[i + 1];
 }
-return (hsh_launch(newargs));
+return (hsh_launch(newargs, progname));
 }
 return (1);
 }

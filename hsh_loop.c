@@ -9,7 +9,7 @@
   * hsh_loop - gets input and executs it.
   * Return: Nothing
  */
-void hsh_loop(void)
+void hsh_loop(char *progname)
 {
 char *line;
 char **args;
@@ -20,7 +20,7 @@ do
 write(STDOUT_FILENO, "#cinsfun$ ", 10);
 line = hsh_read_line();
 args = hsh_split_line(line);
-status = hsh_execute(args);
+status = hsh_execute(args, progname);
 free(line);
 free(args);
 }
