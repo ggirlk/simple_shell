@@ -25,7 +25,7 @@ write(STDERR_FILENO, "hsh: allocation error\n", 22);
 free(tokens);
 exit(EXIT_FAILURE);
 }
-token = strtok(line, &hsh_tok_delim);
+token = strtok(line, hsh_tok_delim);
 while (token != NULL)
 {
 tokens[position] = token;
@@ -41,7 +41,7 @@ write(STDERR_FILENO, "hsh: allocation error\n", 22);
 exit(EXIT_FAILURE);
 }
 }
-token = strtok(NULL, hsh_tok_bufsize);
+token = strtok(NULL, hsh_tok_delim);
 }
 tokens[position] = NULL;
 return (tokens);
