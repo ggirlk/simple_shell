@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include "string.h"
 #include "holberton.h"
 
 /**
@@ -15,7 +15,8 @@ int hsh_cd(char **args, char *progname)
 {
 if (args[1] == NULL)
 {
-write(STDOUT_FILENO, "hsh: expected argument to \"cd\"\n", 34);
+write(STDOUT_FILENO, progname, _strlen(progname));
+write(STDOUT_FILENO, ": expected argument to \"cd\"\n", 31);
 }
 else
 {
